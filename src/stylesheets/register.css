@@ -1,0 +1,97 @@
+@media only screen and (max-width:600px) {
+    input.txtbox {
+        width: 17rem;
+    }
+    .main{
+        overflow: hidden;
+    }
+    div.box3{
+        display: flex;
+        padding: 5px 20px;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+    }
+    div.box3 img.image{
+        height: 180px;
+        width: 180px;
+    }
+    form {
+        padding: 0;
+    }
+    div.box {
+        padding: 10px 0;
+
+    }
+
+    form>span {
+        background: #020B19;
+    }
+    div.profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+form {
+    z-index: 3;
+}
+
+div.box {
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+form::after {
+    content: '';
+    z-index: -1;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background: rgb(4, 216, 99);
+    opacity: 0.3;
+    position: absolute;
+    top: -80%;
+    right: -50%;
+    filter: blur(130px);
+}
+form::before {
+    content: '';
+    z-index: -1;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background: rgb(4, 216, 99);
+    opacity: 0.3;
+    position: absolute;
+    bottom: -80%;
+    left: -50%;
+    filter: blur(130px);
+}
+
+.profile {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+}
+
+.profile::after {
+    content: '+';
+    font-size: 22px;
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    background: rgb(26, 26, 36);
+}

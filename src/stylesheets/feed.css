@@ -1,0 +1,22 @@
+@media only screen and (max-width:600px) {
+    div.feed{
+        width: 100%;
+        padding: 1.7rem;
+    }
+    .feed .top p{
+        font-size: 14px;
+    }
+    .feed .top h4{
+        font-size: 20px;
+    }
+    .feed .posts-container .post .header{
+        align-items: center;
+    }
+    .feed .posts-container{
+        width: 100%;
+    }
+    .feed .posts-container .post .header .profile{
+       height: 40px;
+       width: 40px;
+    }
+}

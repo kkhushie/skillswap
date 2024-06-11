@@ -1,0 +1,44 @@
+@media only screen and (max-width:600px) {
+    div.sidebar ul li.hide{
+        display: none;
+    }
+    div.sidebar ul li a svg{
+        height: 18px;
+        width: 18px;
+    }
+    div.sidebar ul li a span{
+        font-size: 15px;
+    }
+    div.sidebar ul li a {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 4px;
+    }
+
+    div.sidebar ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        padding: 0;
+        flex-direction: row;
+    }
+
+    div.sidebar {
+        height: 10vh;
+        width: 100vw;
+        border-bottom: none;
+        border-top: 1px solid rgb(61, 60, 60);
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0;
+        z-index: 60;
+    }
+
+    div.sidebar .logo {
+        display: none;
+    }
+}

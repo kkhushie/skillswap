@@ -1,0 +1,69 @@
+@media only screen and (max-width:600px) {
+    input.txtbox {
+        width: 17rem;
+    }
+    div.main{
+       overflow: hidden;
+    }
+    .box>form.myform{
+        padding:20px;
+        background: red;
+        background: transparent;
+    }
+
+    div.box {
+        padding: 10px 0;
+
+    }
+    div.box2 img{
+        height: 200px;
+    }
+    div.box2{
+       flex-direction: column;
+       padding: 15px;
+    }
+    div.box2::after {
+        content: '';
+        display: none;
+    }
+    .container{
+        height: 100px;
+        width: 100px;
+    }
+}
+form{
+    z-index: 3;
+}
+div.box{
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+    }
+   form::after {
+        content: '';
+        z-index: -1;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background: rgb(4, 216, 99);
+    opacity: 0.3;
+    position: absolute;
+    top: -80%;
+    right: -50%;
+    filter: blur(130px);
+}
+div.box2{
+    position: relative;
+}
+div.box2::after {
+    content: '';
+height: 300px;
+width: 300px;
+border-radius: 100%;
+background: rgb(4, 216, 99);
+opacity: 0.3;
+position: absolute;
+bottom: 0%;
+left: -20%;
+filter: blur(130px);
+}

@@ -1,0 +1,35 @@
+@media only screen and (max-width:600px) {
+   nav.navbar{
+    z-index: 89;
+    padding: 0px 0px;
+   }
+   .navbar .logo{
+        display: block;
+        width: fit-content;
+    }
+    .navbar input{
+        display: none;
+    }
+    .navbar ul li a.cta{
+        font-size: 13px;
+        padding: 4px 7px;
+
+    }
+    .navbar .logo h1{
+        font-size: 16px;
+    }
+    .navbar .logo img{
+        height: 40px;
+        width: 40px;
+    }
+    .navbar ul li{
+        padding: 6px;
+        font-size: 14px;
+    }
+    .navbar ul{
+        width: fit-content;
+        justify-content: end;
+        height: 100%;
+        gap: 0;
+    }
+}
